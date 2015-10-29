@@ -29,9 +29,10 @@ router.get('/new', function(req, res) {
 // Hiba felvitele POST
 router.post('/new', function(req, res) {
    // adatok ellenőrzése
-    req.checkBody('helyszin', 'Hibás helyszín').notEmpty().withMessage('Kötelező megadni!');
+    req.checkBody('tipus', 'Hibás helyszín').notEmpty().withMessage('Kötelező megadni!');
     req.sanitizeBody('leiras').escape();
     req.checkBody('leiras', 'Hibás leírás').notEmpty().withMessage('Kötelező megadni!');
+    req.checkBody('hatarido', 'Hibás hatarido').notEmpty().withMessage('Kötelező megadni!');
     
     var validationErrors = req.validationErrors(true);
     console.log(validationErrors);
@@ -45,12 +46,13 @@ router.post('/new', function(req, res) {
     else {
         req.app.models.error.create({
             status: 'new',
-            location: req.body.helyszin,
-            description: req.body.leiras
+            location: req.body.tipus,
+            description: req.body.leiras,
+            dateline: req.body.hatarido
         })
         .then(function (error) {
             //siker
-            req.flash('info', 'Hiba sikeresen felvéve!');
+            req.flash('info', 'Új feladat sikeresen felvéve!');
             res.redirect('/errors/list');
         })
         .catch(function (err) {

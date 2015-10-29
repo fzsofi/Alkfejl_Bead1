@@ -21,6 +21,10 @@ module.exports = {
             type: 'string',
             required: true,
         },
+        dateline: {
+            type: 'string',
+            required: true,
+        },
 
         user: {
             model: 'user',

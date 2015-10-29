@@ -38,8 +38,9 @@ $(function () {
                         '<tr>' +
                             '<th>Időpont</th>' +
                             '<th>Státusz</th>' +
-                            '<th>Helyszín</th>' +
-                            '<th>Leírás</th>' +
+                            '<th>Típus</th>' +
+                            '<th>Részletek</th>' +
+                            '<th>Határidő</th>' +
                             '<th></th>' +
                         '</tr>'    +
                     '</thead>' +
