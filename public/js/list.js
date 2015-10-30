@@ -3,7 +3,6 @@ $(function () {
     console.log('list.js');
     
     var $errorTable = $('#errorTable').hide();
-    console.log($errorTable);
     
     var statusClasses = {
         'new': 'danger',
@@ -20,7 +19,6 @@ $(function () {
         var $trs = $errorTable.find('tbody tr .label-'+statusClasses[type]).closest('tr');
         rows[type] = $trs;
     });
-    console.log(rows);
     
     var $ul = $('<ul class="nav nav-tabs" role="tablist"></ul>');
     types.forEach(function(type) {
@@ -36,11 +34,12 @@ $(function () {
                 '<table class="table table-striped table-hover">' +
                     '<thead>' +
                         '<tr>' +
+                            '<th>ID</th>' +
                             '<th>Időpont</th>' +
                             '<th>Státusz</th>' +
+                            '<th>Határidő</th>' +
                             '<th>Típus</th>' +
                             '<th>Részletek</th>' +
-                            '<th>Határidő</th>' +
                             '<th></th>' +
                         '</tr>'    +
                     '</thead>' +

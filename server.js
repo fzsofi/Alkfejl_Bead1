@@ -18,6 +18,36 @@ var loginController = require('./controllers/login');
 
 var hbs = require('hbs');
 
+
+hbs.registerHelper("formatDate", function(date){
+  if (typeof(date) == "undefined") {
+    return "Unknown";
+  }
+  return date.getFullYear() + "." + (date.getMonth() < 10?'0'+date.getMonth():date.getMonth()) + "." + (date.getDay() < 10?'0'+date.getDay():date.getDay());
+});
+
+
+function addNumberPrefix(num) {
+    return (num < 10?'0'+num:num);
+}
+
+hbs.registerHelper("formatDateTime", function(date){
+  if (typeof(date) == "undefined") {
+    return "Unknown";
+  }
+  
+  var year = date.getFullYear();
+  var month = addNumberPrefix(date.getMonth());
+  var day = addNumberPrefix(date.getDay());
+  var hour = addNumberPrefix(date.getHours());
+  var min = addNumberPrefix(date.getMinutes());
+  var sec = addNumberPrefix(date.getSeconds());
+  
+  return year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec;
+  
+});
+
+
 var blocks = {};
 
 hbs.registerHelper('extend', function(name, context) {
@@ -119,6 +149,7 @@ var app = express();
 app.set('views', './views');
 app.set('view engine', 'hbs');
 
+
 //Middleware
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -138,7 +169,7 @@ app.use(setLocalsForLayout());
 
 //endpoints
 app.use('/', indexController);
-//app.use('/errors', errorController);
+// app.use('/errors', errorController);
 app.use('/errors', ensureAuthenticated, errorController);
 app.use('/login', loginController);
 
@@ -173,3 +204,4 @@ orm.initialize(waterlineConfig, function(err, models) {
     
     console.log("ORM is started.");
 });
+

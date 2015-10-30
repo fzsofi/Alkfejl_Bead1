@@ -1,10 +1,9 @@
-
 {{#extend "scripts"}}
 <script src="/lib/bootstrap-validator/dist/validator.min.js"></script>
 {{/extend}}
 
 <div class="page-header">
-    <h1>Új feladat</h1>
+    <h1>Szerkesztés</h1>
 </div>
 
 <form class="form-horizontal" method="post">
@@ -14,9 +13,10 @@
                 has-error
             {{/if}}
         ">
+            <input type="hidden" name="id" value="{{data.id}}" />
             <label for="tipus" class="col-lg-2 control-label">Típus</label>
             <div class="col-lg-10">
-                <input class="form-control" id="tipus" name="tipus" placeholder="ZH, beadandó, vizsga" type="text" value="{{data.tipus}}">
+                <input class="form-control" id="tipus" name="tipus" placeholder="ZH, beadandó, vizsga" type="text" value="{{data.location}}">
                 {{#if validationErrors.tipus}}
                     <span class="help-block">{{validationErrors.tipus.msg}}</span>
                 {{/if}}
@@ -29,7 +29,7 @@
         ">
             <label for="leiras" class="col-lg-2 control-label">Részletek</label>
             <div class="col-lg-10">
-                <textarea class="form-control" rows="3" id="leiras" name="leiras" placeholder="pl.: témakörök...">{{data.leiras}}</textarea>
+                <textarea class="form-control" rows="3" id="leiras" name="leiras" placeholder="pl.: témakörök...">{{data.description}}</textarea>
                 <span class="help-block">Add meg mit kell megírnod/megtanulnod.</span>
                 {{#if validationErrors.leiras}}
                     <span class="help-block">{{validationErrors.leiras.msg}}</span>
@@ -43,7 +43,8 @@
         ">
             <label for="hatarido" class="col-lg-2 control-label">Határidő</label>
             <div class="col-lg-10">
-               <input class="form-control" id="hatarido" name="hatarido" placeholder="pl.: 2015.11.02. 23:59" type="text" value="{{data.hatarido}}">
+               <input class="form-control" id="hatarido" name="hatarido" placeholder="pl.: 2015.11.02. 23:59" type="text" value="{{data.dateline}}">
+               {{dateline}}
                {{#if validationErrors.hatarido}}
                     <span class="help-block">{{validationErrors.hatarido.msg}}</span>
                 {{/if}}
@@ -51,11 +52,29 @@
         </div>
         <div class="form-group">
             <div class="col-lg-10 col-lg-offset-2">
-                <button type="reset" class="btn btn-default">Töröl</button>
-                <button type="submit" class="btn btn-primary">Felvesz</button>
+                <button type="reset" class="btn btn-default" data-toggle="modal" data-target=".bs-deleteErr-modal-sm">Töröl</button>
+                <button type="submit" class="btn btn-primary">Mentés</button>
                 <a href="/errors/list" class="btn btn-default">Vissza</a>
             </div>
         </div>
     </fieldset>
 </form>
 
+<div class="modal fade bs-deleteErr-modal-sm" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridSystemModalLabel">Figyelem!</h4>
+        </div>
+        <div class="modal-body">
+            Biztosan törlöd ezt a feladatot?
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Nem</button>
+            <a href="/errors/delete/{{data.id}}" class="btn btn-primary">Igen</a>
+        </div>
+        
+    </div>
+  </div>
+</div>

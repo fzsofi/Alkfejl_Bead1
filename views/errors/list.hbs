@@ -16,21 +16,23 @@
 <table class="table table-striped table-hover" id="errorTable">
     <thead>
         <tr>
+            <th>ID</th>
             <th>Időpont</th>
             <th>Státusz</th>
+            <th>Határidő</th>
             <th>Típus</th>
             <th>Részletek</th>
-            <th>Határidő</th>
         </tr>   
     </thead>
     <tbody>
         {{#each errors}}
         <tr>
-            <td>{{date}}</td>
+            <td>{{id}}</td>
+            <td>{{formatDateTime date}}</td>
             <td><span class="label label-{{statusClass}}">{{statusText}}</span></td>
-            <td>{{location}}</td>
-            <td><span class="badge">{{numberOfMessages}}</span> {{description}}</td>
             <td>{{dateline}}</td>
+            <td>{{location}}</td>
+            <td><a href="/errors/edit/{{id}}" class="btn btn-default">Szerkeszt</a></td>
         </tr>
         {{/each}}
     </tbody>
