@@ -5,11 +5,8 @@ $(function () {
     var $errorTable = $('#errorTable').hide();
     
     var statusClasses = {
-        'new': 'danger',
-        'assigned': 'info',
-        'ready': 'success',
-        'rejected': 'default',
-        'pending': 'warning',
+        'Új': 'danger',
+        
     };
 
     var types = Object.keys(statusClasses);

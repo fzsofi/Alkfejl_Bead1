@@ -3,123 +3,93 @@
     "error": [
       {
         "status": "new",
-        "location": "bead",
+        "location": "Beadandó",
         "description": "sdfsdg",
-        "dateline": "10.29.",
+        "dateline": "2015.11.05.",
         "date": "2015-10-29T11:21:46.307Z",
         "createdAt": "2015-10-29T11:21:46.308Z",
-        "updatedAt": "2015-10-29T11:21:46.308Z",
+        "updatedAt": "2015-10-31T09:56:59.408Z",
         "id": 8
       },
       {
         "status": "new",
         "location": "ZH",
         "description": "sdfs",
-        "dateline": "10.23",
+        "dateline": "2015.11.23",
         "date": "2015-10-29T11:34:39.577Z",
         "createdAt": "2015-10-29T11:34:39.578Z",
-        "updatedAt": "2015-10-29T11:34:39.578Z",
+        "updatedAt": "2015-10-31T09:57:13.239Z",
         "id": 9
       },
       {
         "status": "new",
-        "location": "ZH",
-        "description": "sdf",
-        "dateline": "sdf",
-        "date": "2015-10-29T11:38:56.139Z",
-        "createdAt": "2015-10-29T11:38:56.139Z",
-        "updatedAt": "2015-10-29T11:38:56.139Z",
-        "id": 10
-      },
-      {
-        "status": "new",
-        "location": "beadandó",
+        "location": "Beadandó",
         "description": "sd",
         "dateline": "2015.10.29.",
         "date": "2015-10-29T11:39:29.538Z",
         "createdAt": "2015-10-29T11:39:29.539Z",
-        "updatedAt": "2015-10-29T11:39:29.539Z",
+        "updatedAt": "2015-10-31T09:57:34.500Z",
         "id": 11
       },
       {
         "status": "new",
-        "location": "b",
+        "location": "HF",
         "description": "b",
-        "dateline": "b",
+        "dateline": "11.05.",
         "date": "2015-10-29T11:58:40.420Z",
         "createdAt": "2015-10-29T11:58:40.421Z",
-        "updatedAt": "2015-10-29T11:58:40.421Z",
+        "updatedAt": "2015-10-31T09:57:57.733Z",
         "id": 13
       },
       {
         "status": "new",
         "location": "ZH",
         "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\r\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\r\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\r\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\r\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-        "dateline": "10.2",
+        "dateline": "12.04.",
         "date": "2015-10-29T12:16:04.188Z",
         "createdAt": "2015-10-29T12:16:04.189Z",
-        "updatedAt": "2015-10-29T12:16:04.189Z",
+        "updatedAt": "2015-10-31T09:58:13.991Z",
         "id": 14
       },
       {
         "status": "new",
-        "location": "Zh",
+        "location": "ZH",
         "description": "sgs",
-        "dateline": "2015",
+        "dateline": "2015.11.05.",
         "date": "2015-10-30T08:43:46.190Z",
         "createdAt": "2015-10-30T08:43:46.193Z",
-        "updatedAt": "2015-10-30T08:43:46.193Z",
+        "updatedAt": "2015-10-31T09:58:33.995Z",
         "id": 15
       },
       {
         "status": "new",
-        "location": "asdf",
-        "description": "aaaa",
-        "dateline": "2015.10.30.",
-        "date": "2015-10-30T08:45:17.103Z",
-        "createdAt": "2015-10-30T08:45:17.106Z",
-        "updatedAt": "2015-10-30T08:45:17.106Z",
-        "id": 16
+        "location": "Vizsga",
+        "description": "dasgfsgdasgfsgdasgfsgdasgfsg\r\ndasgfsg\r\ndasgfsgdasgfsgdasgfsg",
+        "dateline": "2016.01.07.",
+        "date": "2015-10-31T09:59:14.251Z",
+        "createdAt": "2015-10-31T09:59:14.252Z",
+        "updatedAt": "2015-10-31T10:10:50.241Z",
+        "id": 21
       },
       {
         "status": "new",
-        "location": "01",
-        "description": "01",
-        "dateline": "01",
-        "date": "2015-10-30T09:46:18.706Z",
-        "createdAt": "2015-10-30T09:46:18.708Z",
-        "updatedAt": "2015-10-30T09:46:18.708Z",
-        "id": 17
+        "location": "ZH",
+        "description": "fgdsfg",
+        "dateline": "2015.11.05.",
+        "date": "2015-10-31T10:50:47.156Z",
+        "createdAt": "2015-10-31T10:50:47.156Z",
+        "updatedAt": "2015-10-31T10:50:47.157Z",
+        "id": 22
       },
       {
         "status": "new",
-        "location": "asdasdasas",
-        "description": "asdasdasda",
-        "dateline": "aaa",
-        "date": "2015-10-30T10:21:20.914Z",
-        "createdAt": "2015-10-30T10:21:20.915Z",
-        "updatedAt": "2015-10-30T10:21:20.915Z",
-        "id": 18
-      },
-      {
-        "status": "new",
-        "location": "aaa",
-        "description": "aaaaa",
-        "dateline": "aaaa",
-        "date": "2015-10-30T11:10:15.431Z",
-        "createdAt": "2015-10-30T11:10:15.432Z",
-        "updatedAt": "2015-10-30T11:10:15.432Z",
-        "id": 19
-      },
-      {
-        "status": "new",
-        "location": "assigned",
-        "description": "asdf",
-        "dateline": "asdf",
-        "date": "2015-10-30T11:12:29.813Z",
-        "createdAt": "2015-10-30T11:12:29.814Z",
-        "updatedAt": "2015-10-30T11:12:29.814Z",
-        "id": 20
+        "location": "ZH",
+        "description": "sdfg",
+        "dateline": "2015.11.05.",
+        "date": "2015-10-31T11:38:36.749Z",
+        "createdAt": "2015-10-31T11:38:36.750Z",
+        "updatedAt": "2015-10-31T11:38:36.750Z",
+        "id": 23
       }
     ],
     "user": [
@@ -166,6 +136,17 @@
         "createdAt": "2015-10-28T16:14:32.607Z",
         "updatedAt": "2015-10-28T16:14:32.607Z",
         "id": 4
+      },
+      {
+        "surname": "b",
+        "forename": "b",
+        "neptun": "b",
+        "password": "$2a$10$l9JlrU5ze2tZ76NZfq7AqeWeCXKGNF/Topl4903xGCtseNqKsrSRa",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-10-31T10:43:36.415Z",
+        "updatedAt": "2015-10-31T10:43:36.415Z",
+        "id": 5
       }
     ]
   },
@@ -253,10 +234,10 @@
   },
   "counters": {
     "error": {
-      "id": 20
+      "id": 23
     },
     "user": {
-      "id": 4
+      "id": 5
     }
   }
 }
