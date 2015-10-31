@@ -86,7 +86,7 @@ Végpontok:
 
 Felhasználóifelület-modell:
 Oldalvázlatok
-![Kép felirata](picture/dv.png)
+![Drótvázterv](picture/dv.PNG)
 Osztálymodell:
 3 kép
 
