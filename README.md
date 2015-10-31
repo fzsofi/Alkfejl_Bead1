@@ -1,8 +1,8 @@
-### Alkfejl_Bead1
+# Alkfejl_Bead1
 
 ##1) Követelményanalízis
 
-#Funkcionális elvárások:
+###Funkcionális elvárások:
 - Legyen lehetőség regisztrációra.
 - Az alkalmazással a regisztrált felhasználók tudjanak:
 	- felvenni feladatokat
@@ -10,7 +10,7 @@
 	- szerkeszteni feladatokat
 	- törölni feladatokat
 
-#Nem funkcionalis elvárások:
+###Nem funkcionalis elvárások:
 - Használhatóság:
 	legyen egyértelmű, önmagyarázó a felület
 - Teljesítmény:
@@ -28,9 +28,9 @@
 	az alkalmazásnak online elérhetőnek kell lennie 
 	2015. november 1-től
 
-#Használatieset-modell:
+###Használatieset-modell:
 
-#Szerepkörök:
+###Szerepkörök:
 - vendég: 
 	Az a felhasználó, aki azonosítatlanul használja az alkalmazást. A weben a legtöbb látogató ilyen. 
 	A vendég felhasználó csak a publikus oldalakat és funkciókat érheti el. 
@@ -40,14 +40,14 @@
 	a részletek és a szerkesztési oldalakat is használhatja.
 	Tarolt adatok: neptun kód, jelszó, vezetéknév, keresztnév, avatar,
 	
-#Használati eset diagram:
+###Használati eset diagram:
 
 Folyamatok pontos menete:
 	Új feladat velvétele: Ha még nem regisztráltál akkor meg kell tenned. 
 	Ha már regisztrált felhasználó vagy akkor bejelentkezés után, a lista oldalon, az új feladat felvétele gombra 			kattattintva jutsz el a szerkesztő felületre. Itt ki kell töltened az összes mezőt, majd a mentés gombra 			kattintva felveheted az új feladatodat.
 
 ##2) Tervezés:
-#Architektúra terv
+###Architektúra terv
 Oldaltérkép:
 	Publikus:
 	- Főoldal
@@ -74,22 +74,22 @@ Végpontok:
 	POST /edit/:id: feladat szerkesztése, adatok küldése
 	GET /delete/:id: feladat törlése
 
-#Felhasználóifelület-modell:
+###Felhasználóifelület-modell:
 Oldalvázlatok
 ![Drótvázterv](picture/dv.PNG)
 Osztálymodell:
 ![Adatmodell és adatbázis terv](picture/adatm.png)
 
 ##3) Implementáció:
-#Fejlesztői környezet bemutatása:
+###Fejlesztői környezet bemutatása:
 	c9.io fejlesztői környezetben elkészített node.js projekt, ami Github kódtárban van tárolva.
 
-#Könyvtárstruktúrában lévő mappák funkiójának bemutatása:
+###Könyvtárstruktúrában lévő mappák funkiójának bemutatása:
 - config: waterline használatához szükséges konfiguráció
 - controllerek: az oldalak eléréséhez és adatok feltöltéséhez szükséges kontrollerek
 - models: A feladatok és a felhasználók modellje
 - view: kinézetek
 
-##4) Tesztelés:
+###4) Tesztelés:
 
-##5) Felhasználói dokumentáció:
+###5) Felhasználói dokumentáció:
