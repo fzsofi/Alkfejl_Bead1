@@ -54,8 +54,7 @@ Használati eset diagram:
 
 Folyamatok pontos menete:
 	Új feladat velvétele: Ha még nem regisztráltál akkor meg kell tenned. 
-	Ha már regisztrált felhasználó vagy akkor bejelentkezés után, a lista oldalon, az új feladat felvétele gombra kattattintva 
-	jutsz el a szerkesztő felületre. Itt ki kell töltened az összes mezőt, majd a mentés gombra kattintva felveheted az új 	feladatodat.
+	Ha már regisztrált felhasználó vagy akkor bejelentkezés után, a lista oldalon, az új feladat felvétele gombra 			kattattintva jutsz el a szerkesztő felületre. Itt ki kell töltened az összes mezőt, majd a mentés gombra 		kattintva felveheted az új feladatodat.
 
 2) Tervezés:
 Architektúra terv
@@ -87,7 +86,7 @@ Végpontok:
 
 Felhasználóifelület-modell:
 Oldalvázlatok
-1 kép
+![Kép felirata](docs/picture/dv.png)
 Osztálymodell:
 3 kép
 
