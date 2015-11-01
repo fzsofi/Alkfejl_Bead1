@@ -24,4 +24,21 @@
     "mocha": "^2.3.3",
     "zombie": "^4.2.1"
   }
+},
+  "name": "workspace",
+  "description": "##1) Követelményanalízis",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fzsofi/Alkfejl_Bead1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fzsofi/Alkfejl_Bead1/issues"
+  },
+  "homepage": "https://github.com/fzsofi/Alkfejl_Bead1#readme"
 }
+
