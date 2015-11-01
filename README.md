@@ -92,7 +92,6 @@ Osztálymodell:
 
 ###4) Tesztelés:
 
-###5) Felhasználói dokumentáció:
 a)Kézzel:
 	-regisztráció
 	-bejelentkezés
