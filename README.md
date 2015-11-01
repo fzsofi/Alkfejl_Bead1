@@ -93,3 +93,30 @@ Osztálymodell:
 ###4) Tesztelés:
 
 ###5) Felhasználói dokumentáció:
+a)Kézzel:
+	-regisztráció
+	-bejelentkezés
+	-új feladat felvétele
+		-bármelyik mező üres: hiba
+	-feladat szerkesztése
+		-a validáció itt is érvényes
+	-feladat törlése
+b)Automatikus tesztek:
+	-Egység: mocha, chai
+		User létrehozása, és keresése
+		Validácó jelszó szerint
+	-Funkcionális zombie.js
+		Főoldal tesztelése
+		Hitelesítés
+		Új feladat felvétele
+			login -> Új feladat oldal -> 	üres mező -> hiba
+							minden mező kitöltése -> feladat felvéve
+
+###5) Felhasználói dokumentáció:
+-Az alkalmazás használatához regisztráció szükséges.
+-Regisztrálás után lehet bejelentkezni.
+-Elősször a lista oldalra navigálunk: itt láthatóak az összegyűjtött feladatok
+-Új feladat felvételéhez: Új feladat gomb
+	majd, ha minden mező ki van töltve fel lehet venni a feladatot
+-Szerkesztéshez: a kiválasztott feladat melletti szerkesztés gomb
+-Törlés: a szerkesztés nézetben
