@@ -1,10 +1,10 @@
 {
-  "name": "hibabejelento",
+  "name": "Egyetemi ToDo",
   "version": "0.0.0",
   "authors": [
-    "eltezalan <kereszti.zalan@gmail.com>"
+    "zsofi"
   ],
-  "description": "Hibabejelento alkalmazas",
+  "description": "Egyetemi ToDo",
   "license": "MIT",
   "ignore": [
     "**/.*",
