@@ -1,39 +1,40 @@
 {
-  "scripts": {
-    "test": "node_modules/mocha/bin/mocha **/*.test.js",
-    "watch-test": "node_modules/mocha/bin/mocha --watch **/*.test.js",
-    "start": "node server.js"
-  },
+  "name": "egyetemi_todo",
+  "version": "1.0.0",
+  "description": "##1) Követelményanalízis",
+  "main": "server.js",
   "dependencies": {
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.14.1",
+    "bower": "^1.6.3",
+    "chai": "^3.4.0",
     "connect-flash": "^0.1.1",
     "express": "^4.13.3",
-    "express-session": "^1.12.0",
+    "express-session": "^1.12.1",
     "express-validator": "^2.18.0",
+    "handlebars-intl": "^1.1.1",
     "hbs": "^3.1.1",
     "passport": "^0.3.0",
+    "moment": "^2.10.6",
+    "passport-google-oauth": "^0.2.0",
     "passport-local": "^1.0.0",
     "sails-disk": "^0.10.8",
     "sails-memory": "^0.10.5",
     "sails-postgresql": "^0.10.16",
-    "waterline": "^0.10.26"
+    "waterline": "^0.10.26",
+    "zombie": "^4.2.1"
   },
   "devDependencies": {
-    "chai": "^3.4.0",
-    "mocha": "^2.3.3",
-    "zombie": "^4.2.1"
-  }
-},
-  "name": "workspace",
-  "description": "##1) Követelményanalízis",
-  "version": "1.0.0",
-  "main": "server.js",
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fzsofi/Alkfejl_Bead1.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -41,4 +42,3 @@
   },
   "homepage": "https://github.com/fzsofi/Alkfejl_Bead1#readme"
 }
-
